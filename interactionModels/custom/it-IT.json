@@ -1,0 +1,149 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cotra skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SayTwoNumbersIntent",
+          "slots": [],
+          "samples": [
+            "somma allenamento cognitivo",
+            "dimmi due numeri",
+            "numeri",
+            "numeri allenamento"
+          ]
+        },
+        {
+          "name": "RegisterANumberIntent",
+          "slots": [
+            {
+              "name": "SpecialNumber",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{SpecialNumber}"
+          ]
+        },
+        {
+          "name": "SayANumberIntent",
+          "slots": [],
+          "samples": [
+            "say a number"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "ReminderCreatorIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "CheckUserIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "MotivationalIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "RegisterUserIntent",
+          "slots": [
+            {
+              "name": "User",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "{User}",
+                "Mi chiamo {User}",
+                "Il mio nome è {User}"
+              ]
+            }
+          ],
+          "samples": []
+        },
+        {
+          "name": "UserResetIntent",
+          "slots": [],
+          "samples": [
+            "prima volta",
+            "sono nuovo",
+            "sono un nuovo utente",
+            "nuovo utente"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RegisterUserIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "User",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.402764112202.1392679370189"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.402764112202.1392679370189",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Piacere di conoscerti. Come ti chiami ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1069990309147.826403948970",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sono felice di conoscerti. Quindi ti chiami {User} ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2"
+}
