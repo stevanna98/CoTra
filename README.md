@@ -1,7 +1,7 @@
-# CoTra
-## Project realized by a team of students from Politecnico di Milano
+# CoTra (Cognitive Training)
+## Project realized by a team of students from Politecnico di Milano.
 
-### Author: Giulia Carpani, Filippo Castellani, Orith Halfon, Stefano Vannoni, Elisabetta Marini
+### Authors: Giulia Carpani, Filippo Castellani, Orith Halfon, Stefano Vannoni, Elisabetta Marini.
 
 
 
@@ -25,7 +25,7 @@ By cloning this repository and uploading it on the [ADC][4] you will be able to 
 
 <img src="Images/Permissions_on_ADC.png" width="300">
 
-2. Install the Alexa App on your phone and log in with the same account you are using on ADC.
+2. Install the Alexa App on your phone and log in with the same account you are using on Alexa Developer Console.
 3. Provide permissions on your phone.
 
 Select the skill.
@@ -36,10 +36,21 @@ Provide permissions.
 
 <img src="Images/Permissions_on_phone.jpg" width="100">
 
-### Structure:
+## Lambda Structure:
+
+An in-depth description of the scripts can be found [here][5], side by side with the code but here we introduce the main scripts of our skill.
+
+1. `index.js` : contains all the intent handlers and main dependencies.
+2. `logic.js` : contains usefull functions mainly related to the creation of reminders
+3. `localisation.js` : contains all the sentences Alexa is supposed to answer in Italian and English
+4. `interceptors.js` : specifies the interceptors behaviour during Requests and Responses, from and to Alexa's Front-End. 
 
 
-An in-depth description of the scripts can be found [here][5], side by side with the code.
+## Special Thanks:
+[Rahul Yadav][7] - Voice Evangelist for DabbleLab
+
+[Andrea Muttoni][6] - Former Tech Evangelist for Amazon
+
 
 [Permissions_on_ADC]:Images/Permissions_on_ADC.png
 [Permissions_on_phone]:Images/Permissions_on_phone.jpg
@@ -51,3 +62,5 @@ An in-depth description of the scripts can be found [here][5], side by side with
 [3]:https://developer.amazon.com/en-US/alexa/alexa-skills-kit
 [4]:https://developer.amazon.com/alexa/console/ask
 [5]:https://github.com/stevanna98/CoTra/tree/main/lambda
+[6]:https://muttoni.github.io/blog/about/
+[7]:https://twitter.com/rahulyadav360
