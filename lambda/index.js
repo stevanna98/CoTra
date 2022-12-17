@@ -37,7 +37,7 @@ const ddbAdapter = require('ask-sdk-dynamodb-persistence-adapter');
 const debugging = false;
 
 // This variable is used to set the amount of questions that will be performed during the training.
-const total_question_number = 5; // we've set the amount of questions to 3 only for demonstrative purposes
+const total_question_number = 3; // we've set the amount of questions to 3 only for demonstrative purposes
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
