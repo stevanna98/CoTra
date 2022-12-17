@@ -12,13 +12,20 @@ Our skill implements a digital version of the [Paced Auditory Serial Addition Te
 This skill was created for [Alexa][2] devices, leveraging the powerful framework of [Alexa Skill Kit][3].
 
 ## What software does it require ?
- - No software is required to run this. It is sufficient to upload the files on the [Alexa Developer Console][4] (ADC) after creating your own account.
+ - No software is required to run this. It is sufficient to upload the files on the [Alexa Developer Console][4] (ADC) after creating your own account. You can either, download the files in this repository or alternatively select the github repository link as template, when creating a new skill.
+    - **Remember** to add both Italian and English-US languages on the skill settings.
  - A **very important step**: you need to provide the permissions indicated in the paragraph down below for a proper use of the skill with all its functionalities.
+ 
+ ---
 
 ## Example scenario:
 By cloning this repository and uploading it on the [ADC][4] you will be able to launch the skill by saying:
 
 "_Alexa Launch CoTra Skill_".
+
+- if you decide to refer to this GitHub repo to upload the skill, **please remeber** to change the skill invocations name which is set by default to _"change me"_
+
+---
 
 ## Configuration of Permissions
 1. Provide permission on the ADC.
@@ -36,6 +43,9 @@ Provide permissions.
 
 <img src="Images/Permissions_on_phone.jpg" width="100">
 
+---
+
+
 ## Lambda Structure:
 
 An in-depth description of the scripts can be found [here][5], side by side with the code but here we introduce the main scripts of our skill.
@@ -45,6 +55,7 @@ An in-depth description of the scripts can be found [here][5], side by side with
 3. `localisation.js` : contains all the sentences Alexa is supposed to answer in Italian and English
 4. `interceptors.js` : specifies the interceptors behaviour during Requests and Responses, from and to Alexa's Front-End. 
 
+--- 
 
 ## Special Thanks:
 [Rahul Yadav][7] - Voice Evangelist for DabbleLab
